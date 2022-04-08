@@ -1,0 +1,124 @@
+[
+  {
+    "id" : 1,
+    "type" : 1,
+    "orchard" : "Benji (V1394U)",
+    "block" : "UB13",
+    "staff" : {
+      "id" : 1,
+      "firstName" : "John",
+      "lastName" : "Doe"
+    },
+    "field" : [
+      {
+        "rowId" : 3,
+        "totalTrees" : 556,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 4,
+        "totalTrees" : 556,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 250
+        }
+      }
+    ]
+  },
+  {
+    "id" : 2,
+    "type" : 1,
+    "orchard" : "Benji (V1394U)",
+    "block" : "UB13",
+    "staff" : {
+      "id" : 1,
+      "firstName" : "Kun",
+      "lastName" : "Zedong"
+    },
+    "field" : [
+      {
+        "rowId" : 3,
+        "totalTrees" : 556,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 4,
+        "totalTrees" : 556,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Jia",
+            "lastName" : "Yaling"
+          },
+          "completed" : 250
+        }
+      },
+      {
+        "rowId" : 5,
+        "totalTrees" : 270,
+        "current" : 20,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yong",
+            "lastName" : "Qiu"
+          },
+          "completed" : 100
+        }
+      }
+    ]
+  },
+  {
+    "id" : 3,
+    "type" : 2,
+    "orchard" : "Benji (V1394U)",
+    "block" : "UB13",
+    "staff" : {
+      "id" : 1,
+      "firstName" : "Mariah",
+      "lastName" : "Abigaíl"
+    },
+    "field" : [
+      {
+        "rowId" : 3,
+        "totalTrees" : 556,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 4,
+        "totalTrees" : 556,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 250
+        }
+      },
+      {
+        "rowId" : 5,
+        "totalTrees" : 270,
+        "current" : 20,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Keijo",
+            "lastName" : "Adriana"
+          },
+          "completed" : 100
+        }
+      }
+    ]
+  }
+]
