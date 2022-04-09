@@ -1,6 +1,7 @@
 package com.midsummer.orchardjob.di.presentation
 
-import com.midsummer.orchardjob.MainActivity
+import com.midsummer.orchardjob.screens.mainScreen.MainActivity
+import com.midsummer.orchardjob.screens.loadingScreen.LoadingActivity
 import dagger.Subcomponent
 
 /**
@@ -14,4 +15,5 @@ import dagger.Subcomponent
 interface PresentationComponent {
 
     fun inject(mainActivity: MainActivity)
+    fun inject(loadingActivity: LoadingActivity)
 }

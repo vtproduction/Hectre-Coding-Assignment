@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Orchard Job</string>
+    <string name="no_data_found">No data found. Maybe there is server problem, or your device is disconnect from internet. To get latest data, press the Retry button.</string>
+    <string name="retry">Retry</string>
 </resources>

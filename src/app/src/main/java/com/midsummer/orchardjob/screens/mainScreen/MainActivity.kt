@@ -1,8 +1,9 @@
-package com.midsummer.orchardjob
+package com.midsummer.orchardjob.screens.mainScreen
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
+import com.midsummer.orchardjob.R
 import com.midsummer.orchardjob.data.OrchardJobRepository
 import com.midsummer.orchardjob.screens.common.ScreenNavigator
 import com.midsummer.orchardjob.screens.common.activities.BaseActivity
@@ -30,7 +31,6 @@ class MainActivity : BaseActivity() {
 
     override fun onResume() {
         super.onResume()
-        screenNavigator.testLaunch()
         dialogNavigator.showServerErrorDialog()
         fetchJobs()
     }
@@ -38,6 +38,13 @@ class MainActivity : BaseActivity() {
     private fun fetchJobs() {
         coroutineScope.launch {
             val r = repository.fetchData()
+        }
+    }
+
+    companion object{
+        fun start(context: Context){
+            val intent = Intent(context, MainActivity::class.java)
+            context.startActivity(intent)
         }
     }
 }

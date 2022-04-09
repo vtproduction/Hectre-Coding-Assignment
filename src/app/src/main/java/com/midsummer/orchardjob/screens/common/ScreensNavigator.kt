@@ -1,8 +1,10 @@
 package com.midsummer.orchardjob.screens.common
 
+import android.content.Context
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.midsummer.orchardjob.di.activity.ActivityScope
+import com.midsummer.orchardjob.screens.mainScreen.MainActivity
 import javax.inject.Inject
 
 /**
@@ -14,7 +16,7 @@ import javax.inject.Inject
 
 interface ScreenNavigator{
     fun navigateBack()
-    fun testLaunch()
+    fun goToMain()
 }
 
 @ActivityScope
@@ -24,7 +26,7 @@ class ScreensNavigatorImpl @Inject constructor(private val activity: AppCompatAc
         activity.onBackPressed()
     }
 
-    override fun testLaunch() {
-        Toast.makeText(activity, "yo it worked!", Toast.LENGTH_SHORT).show()
+    override fun goToMain() {
+        MainActivity.start(activity)
     }
 }

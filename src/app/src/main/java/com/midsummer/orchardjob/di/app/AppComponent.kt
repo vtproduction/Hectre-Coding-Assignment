@@ -1,6 +1,7 @@
 package com.midsummer.orchardjob.di.app
 
 import com.midsummer.orchardjob.di.activity.ActivityComponent
+import com.midsummer.orchardjob.di.viewModel.ViewModelModule
 import dagger.Component
 
 /**
@@ -10,7 +11,7 @@ import dagger.Component
  * Happy coding ^_^
  */
 @AppScope
-@Component(modules = [AppModule::class])
+@Component(modules = [AppModule::class, ViewModelModule::class])
 interface AppComponent {
     fun newActivityComponentBuilder() : ActivityComponent.Builder
 }
