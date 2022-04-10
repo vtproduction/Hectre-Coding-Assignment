@@ -5,6 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import com.midsummer.orchardjob.R
 import com.midsummer.orchardjob.data.OrchardJobRepository
+import com.midsummer.orchardjob.databinding.ActivityLoadingBinding
+import com.midsummer.orchardjob.databinding.ActivityMainBinding
 import com.midsummer.orchardjob.screens.common.ScreenNavigator
 import com.midsummer.orchardjob.screens.common.activities.BaseActivity
 import com.midsummer.orchardjob.screens.common.dialogs.DialogNavigator
@@ -22,17 +24,23 @@ class MainActivity : BaseActivity() {
     @Inject lateinit var dialogNavigator: DialogNavigator
     @Inject lateinit var repository: OrchardJobRepository
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         injector.inject(this)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.toolbar.setNavigateUpListener {
+            screenNavigator.navigateBack()
+        }
 
     }
 
     override fun onResume() {
         super.onResume()
-        dialogNavigator.showServerErrorDialog()
-        fetchJobs()
     }
 
     private fun fetchJobs() {

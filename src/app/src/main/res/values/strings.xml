@@ -2,4 +2,18 @@
     <string name="app_name">Orchard Job</string>
     <string name="no_data_found">No data found. Maybe there is server problem, or your device is disconnect from internet. To get latest data, press the Retry button.</string>
     <string name="retry">Retry</string>
+    <string name="pruning">Pruning</string>
+    <string name="thinning">Thinning</string>
+    <string name="add_max_tree">add max tree</string>
+    <string name="orchard">Orchard</string>
+    <string name="block">Block</string>
+    <string name="rate_type">Rate Type</string>
+    <string name="price_rate">price rate</string>
+    <string name="wages">wages</string>
+    <string name="apply_to_all">apply to all</string>
+    <string name="rate">Rate</string>
+    <string name="dollar_sign">$</string>
+    <string name="per_hour">/hour</string>
+    <string name="job_name_will_be_paid">%s will be paid by wages in this timesheet.</string>
+    <string name="trees_for_row">Trees for row No.%d</string>
 </resources>

@@ -23,9 +23,6 @@ class LoadingActivity : BaseActivity() {
     @Inject lateinit var screenNavigator: ScreenNavigator
     private lateinit var viewModel: LoadingViewModel
 
-
-
-
     private lateinit var binding : ActivityLoadingBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,11 +31,17 @@ class LoadingActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityLoadingBinding.inflate(layoutInflater)
-
         setContentView(binding.root)
 
         viewModel = ViewModelProvider(this, viewModelFactory)[LoadingViewModel::class.java]
 
+        observeLiveData()
+        bindListener()
+    }
+
+
+
+    private fun observeLiveData() {
         viewModel.isNotFound.observe(this){
             binding.notFoundLabel.visibility = if (it) View.VISIBLE else View.GONE
             binding.retryButton.visibility = if (it) View.VISIBLE else View.GONE
@@ -54,6 +57,9 @@ class LoadingActivity : BaseActivity() {
                 finish()
             }
         }
+    }
+
+    private fun bindListener(){
 
         binding.retryButton.setOnClickListener {
             viewModel.loadData()
