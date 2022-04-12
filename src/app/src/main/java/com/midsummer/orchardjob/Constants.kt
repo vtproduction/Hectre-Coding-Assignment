@@ -8,7 +8,13 @@ package com.midsummer.orchardjob
  */
 
 object Constants{
-    const val DB_VERSION = 1
+    const val DB_VERSION = 2
     const val DATABASE_NAME = "local.db"
     const val BASE_URL = "https://raw.githubusercontent.com/vtproduction/"
+
+    const val JOB_TYPE_PRUNING = 1
+    const val JOB_TYPE_THINNING = 2
+
+
+    const val TAG = ">>LOG.TAG<<"
 }

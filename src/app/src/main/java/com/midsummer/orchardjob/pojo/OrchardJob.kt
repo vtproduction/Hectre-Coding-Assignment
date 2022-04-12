@@ -4,6 +4,7 @@ package com.midsummer.orchardjob.pojo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 @Entity(tableName = "OrchardJob")
 data class OrchardJob(
@@ -21,4 +22,4 @@ data class OrchardJob(
     val staff: Staff,
     @SerializedName("field")
     val row: List<Row>
-)
+) : Serializable

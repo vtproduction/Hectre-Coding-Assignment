@@ -6,6 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
 import com.midsummer.orchardjob.Constants
+import com.midsummer.orchardjob.pojo.FieldConfig
 import com.midsummer.orchardjob.pojo.OrchardJob
 
 /**
@@ -14,7 +15,7 @@ import com.midsummer.orchardjob.pojo.OrchardJob
  * Ping me at nienbkict@gmail.com
  * Happy coding ^_^
  */
-@Database(entities = [OrchardJob::class], version = Constants.DB_VERSION)
+@Database(entities = [OrchardJob::class, FieldConfig::class], version = Constants.DB_VERSION)
 @TypeConverters(Converters::class)
 abstract class OrchardJobDatabase : RoomDatabase() {
 

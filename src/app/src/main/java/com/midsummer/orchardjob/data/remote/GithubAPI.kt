@@ -1,5 +1,6 @@
 package com.midsummer.orchardjob.data.remote
 
+import com.midsummer.orchardjob.pojo.FieldConfig
 import com.midsummer.orchardjob.pojo.OrchardJob
 import retrofit2.Response
 import retrofit2.http.GET
@@ -14,5 +15,10 @@ interface GithubAPI {
 
     @GET("Hectre-Coding-Assignment/main/api.json")
     suspend fun getOrchardJobs() : Response<List<OrchardJob>>
+
+    @GET("Hectre-Coding-Assignment/main/fieldConfig.json")
+    suspend fun getFieldConfig() : Response<List<FieldConfig>>
+
+
 
 }

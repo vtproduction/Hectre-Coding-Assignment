@@ -16,4 +16,9 @@
     <string name="per_hour">/hour</string>
     <string name="job_name_will_be_paid">%s will be paid by wages in this timesheet.</string>
     <string name="trees_for_row">Trees for row No.%d</string>
+    <string name="unknown_job_type">Unknown job type</string>
+    <string name="error">error</string>
+    <string name="got_it">Got it!</string>
+    <string name="err_mgs_no_row_selected">None of row selected. Please select at least one row!</string>
+    <string name="confirm">confirm</string>
 </resources>

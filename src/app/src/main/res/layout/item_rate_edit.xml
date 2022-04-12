@@ -15,7 +15,9 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="numberDecimal"
+            android:id="@+id/edtRateEdit"
+            android:imeOptions="actionDone"
             android:hint="@string/rate"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.button.MaterialButton
@@ -23,6 +25,8 @@
         android:layout_height="wrap_content"
         android:text="@string/apply_to_all"
         style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:clickable="false"
         android:id="@+id/btnApplyToAll"
+        android:textColor="@color/brown"
         android:layout_marginLeft="12dp"/>
 </LinearLayout>

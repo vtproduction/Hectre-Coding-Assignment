@@ -17,4 +17,16 @@ class DialogNavigator @Inject constructor(
             .add(ServerErrorDialog.newInstance(), null)
             .commitAllowingStateLoss()
     }
+
+    fun showGeneralErrorDialog(errMsg: String) {
+        fragmentManager.beginTransaction()
+            .add(GeneralErrorDialog.newInstance(errMsg), null)
+            .commitAllowingStateLoss()
+    }
+
+    fun showGeneralErrorDialog(errMsgRes: Int) {
+        fragmentManager.beginTransaction()
+            .add(GeneralErrorDialog.newInstance(errMsgRes), null)
+            .commitAllowingStateLoss()
+    }
 }

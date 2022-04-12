@@ -90,55 +90,48 @@
             android:layout_weight="1"
             android:layout_marginEnd="6dp"
             android:text="@string/price_rate"
-            android:id="@+id/btnPriceRate"
-            style="@style/buttonBrown"/>
+            android:backgroundTintMode="src_over"
+            android:backgroundTint="@color/brown"
+            android:textColor="@color/black"
+            android:id="@+id/btnPriceRate"/>
         <com.google.android.material.button.MaterialButton
             android:layout_width="0dp"
             android:layout_height="54dp"
             android:layout_weight="1"
             android:layout_marginStart="6dp"
             android:text="@string/wages"
+            android:backgroundTintMode="src_over"
+            android:backgroundTint="@color/brown"
+            android:textColor="@color/black"
             android:id="@+id/btnPriceWage"/>
     </LinearLayout>
     <include
-        layout="@layout/item_rate_edit"/>
+        layout="@layout/item_rate_edit"
+        android:id="@+id/item_rate_edit"
+        android:visibility="gone"/>
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/job_name_will_be_paid"
         android:id="@+id/txtWagesLabel"
         android:textColor="@color/orange"
-        android:textStyle="bold"/>
-    <com.google.android.flexbox.FlexboxLayout
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"/>
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:flexDirection="row"
-        app:flexWrap="wrap">
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-        <include
-            layout="@layout/item_row_btn"/>
-    </com.google.android.flexbox.FlexboxLayout>
-    <include
-        layout="@layout/item_tree_for_row"/>
+        android:id="@+id/containerRow"
+        android:orientation="vertical"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp"
+
+        android:id="@+id/bottomDivider"
+        android:background="@color/brown"/>
 </LinearLayout>
