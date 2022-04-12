@@ -12,13 +12,11 @@
     "field" : [
       {
         "rowId" : 3,
-        "totalTrees" : 556,
         "current" : 5,
         "completed" : null
       },
       {
         "rowId" : 4,
-        "totalTrees" : 556,
         "current" : 2,
         "completed" : {
           "staff" : {
@@ -44,13 +42,11 @@
     "field" : [
       {
         "rowId" : 3,
-        "totalTrees" : 556,
         "current" : 5,
         "completed" : null
       },
       {
         "rowId" : 4,
-        "totalTrees" : 556,
         "current" : 2,
         "completed" : {
           "staff" : {
@@ -63,7 +59,6 @@
       },
       {
         "rowId" : 5,
-        "totalTrees" : 270,
         "current" : 20,
         "completed" : {
           "staff" : {
@@ -89,13 +84,11 @@
     "field" : [
       {
         "rowId" : 3,
-        "totalTrees" : 556,
         "current" : 5,
         "completed" : null
       },
       {
         "rowId" : 4,
-        "totalTrees" : 556,
         "current" : 2,
         "completed" : {
           "staff" : {
@@ -108,7 +101,6 @@
       },
       {
         "rowId" : 5,
-        "totalTrees" : 270,
         "current" : 20,
         "completed" : {
           "staff" : {
