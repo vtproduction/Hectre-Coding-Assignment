@@ -8,6 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="yellow">#FFf9a825</color>
+    <color name="cyan">#FF4dd0e1</color>
+    <color name="indigo">#FF3949ab</color>
+
     <color name="main">#FFc27b6c</color>
     <color name="sub_main">#FFfbf4e6</color>
     <color name="brown">#FFe5e5e5</color>

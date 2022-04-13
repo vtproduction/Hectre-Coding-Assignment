@@ -21,4 +21,7 @@
     <string name="got_it">Got it!</string>
     <string name="err_mgs_no_row_selected">None of row selected. Please select at least one row!</string>
     <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="do_you_want_to_update_jobs">Do you want to update all jobs?</string>
+    <string name="updated">Updated!</string>
 </resources>

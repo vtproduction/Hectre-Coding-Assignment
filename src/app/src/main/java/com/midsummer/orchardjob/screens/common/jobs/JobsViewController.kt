@@ -49,11 +49,7 @@ class JobsViewController(
             for (listener in listeners) listener.onMaxTreeBtnClicked(jobType)
         }
     }
-    
-    fun clearContent() {
-        jobDetailViewControllerList.clear()
-        container.removeAllViews()
-    }
+
 
     fun applyRateToAllStaff(rate: String?){
         jobDetailViewControllerList.forEach {

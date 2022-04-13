@@ -29,4 +29,16 @@ class DialogNavigator @Inject constructor(
             .add(GeneralErrorDialog.newInstance(errMsgRes), null)
             .commitAllowingStateLoss()
     }
+
+    fun showGeneralConfirmErrorDialog(msg: String, callback: GeneralConfirmDialog.Callback? = null) {
+        fragmentManager.beginTransaction()
+            .add(GeneralConfirmDialog.newInstance(msg, callback), null)
+            .commitAllowingStateLoss()
+    }
+
+    fun showGeneralConfirmDialog(msgRes: Int, callback: GeneralConfirmDialog.Callback? = null) {
+        fragmentManager.beginTransaction()
+            .add(GeneralConfirmDialog.newInstance(msgRes, callback), null)
+            .commitAllowingStateLoss()
+    }
 }

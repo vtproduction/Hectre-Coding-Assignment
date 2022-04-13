@@ -14,6 +14,7 @@ import com.midsummer.orchardjob.Constants
 import com.midsummer.orchardjob.Constants.TAG
 import com.midsummer.orchardjob.R
 import com.midsummer.orchardjob.pojo.OrchardJob
+import com.midsummer.orchardjob.pojo.Staff
 import com.midsummer.orchardjob.screens.common.viewController.BaseViewController
 import com.midsummer.orchardjob.screens.common.viewController.ViewControllerFactory
 import org.w3c.dom.Text
@@ -100,6 +101,7 @@ class JobDetailViewController(
         findViewById<TextView>(R.id.txtUserName).text = getFullName(job)
         findViewById<TextView>(R.id.txtOrchard).text = job.orchard
         findViewById<TextView>(R.id.txtBlock).text = job.block
+        setupAvaColor(job.staff)
 
         txtWagesLabel.text = String.format(context.getString(R.string.job_name_will_be_paid),
             when (job.type) {
@@ -112,6 +114,18 @@ class JobDetailViewController(
 
     private inline fun getShortName(job: OrchardJob) = "${job.staff.firstName.first()}${job.staff.lastName.first()}"
     private inline fun getFullName(job: OrchardJob) = "${job.staff.firstName} ${job.staff.lastName}"
+
+    private fun setupAvaColor(staff: Staff){
+        val code = staff.firstName.first().code + staff.lastName.first().code
+        val bg = when(code % 4){
+            0 -> { ContextCompat.getDrawable(context, R.drawable.bg_circle_cyan) }
+            1 -> { ContextCompat.getDrawable(context, R.drawable.bg_circle_green) }
+            2 -> { ContextCompat.getDrawable(context, R.drawable.bg_circle_indigo) }
+            3 -> { ContextCompat.getDrawable(context, R.drawable.bg_circle_purple) }
+            else -> { ContextCompat.getDrawable(context, R.drawable.bg_circle_cyan) }
+        }
+        findViewById<TextView>(R.id.txtUserAva).background = bg
+    }
 
     private fun onApplyToAllBtnClicked() {
         listeners.forEach {

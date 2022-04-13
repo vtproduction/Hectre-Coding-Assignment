@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.midsummer.orchardjob.Constants
 import com.midsummer.orchardjob.R
@@ -13,6 +14,7 @@ import com.midsummer.orchardjob.pojo.OrchardJob
 import com.midsummer.orchardjob.screens.common.ScreenNavigator
 import com.midsummer.orchardjob.screens.common.activities.BaseActivity
 import com.midsummer.orchardjob.screens.common.dialogs.DialogNavigator
+import com.midsummer.orchardjob.screens.common.dialogs.GeneralConfirmDialog
 import com.midsummer.orchardjob.screens.common.jobs.JobDetailViewController
 import com.midsummer.orchardjob.screens.common.jobs.JobsViewController
 import com.midsummer.orchardjob.screens.common.viewController.ViewControllerFactory
@@ -58,6 +60,16 @@ class MainActivity : BaseActivity() {
         val confirmBtn = layoutInflater.inflate(R.layout.item_confirm_btn, window.decorView.rootView as ViewGroup, false)
 
         binding.container.addView(confirmBtn)
+        confirmBtn.setOnClickListener {
+            dialogNavigator.showGeneralConfirmDialog(R.string.do_you_want_to_update_jobs,
+                object : GeneralConfirmDialog.Callback {
+                    override fun onConfirm() {
+                        Toast.makeText(this@MainActivity, getString(R.string.updated), Toast.LENGTH_SHORT).show()
+                    }
+
+                    override fun onDismiss() {}
+                })
+        }
 
         controllerList.add(pruningJobsVC)
         controllerList.add(thinningJobsVC)

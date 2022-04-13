@@ -9,6 +9,7 @@ import com.midsummer.orchardjob.data.OrchardJobRepository
 import com.midsummer.orchardjob.pojo.FieldConfig
 import com.midsummer.orchardjob.pojo.OrchardJob
 import com.midsummer.orchardjob.screens.common.dialogs.DialogNavigator
+import com.midsummer.orchardjob.screens.common.dialogs.GeneralConfirmDialog
 import com.midsummer.orchardjob.screens.common.jobs.JobDetailViewController
 import com.midsummer.orchardjob.screens.common.jobs.JobsViewController
 import com.midsummer.orchardjob.screens.common.jobs.OrchardRowController
@@ -27,7 +28,7 @@ import kotlin.math.max
 class MainViewModel @Inject constructor(
     private val repository: OrchardJobRepository,
     private val dialogNavigator: DialogNavigator
-) : SavedStateViewModel(), JobsViewController.Listener, JobDetailViewController.Listener, OrchardRowController.Listener {
+) : SavedStateViewModel(), JobsViewController.Listener, JobDetailViewController.Listener, OrchardRowController.Listener{
 
     private lateinit var _pruningJobs: MutableLiveData<List<OrchardJob>>
     val pruningJobs : LiveData<List<OrchardJob>> get() = _pruningJobs

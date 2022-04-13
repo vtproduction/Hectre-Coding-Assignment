@@ -13,11 +13,12 @@
         android:layout_centerVertical="true"
         android:visibility="gone">
 
-        <androidx.appcompat.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatImageButton
             android:layout_width="@dimen/toolbar_icon_size"
             android:layout_height="@dimen/toolbar_icon_size"
             android:layout_gravity="center"
-            app:srcCompat="@drawable/ic_back" />
+            app:srcCompat="@drawable/ic_back"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
 
     </FrameLayout>
 
