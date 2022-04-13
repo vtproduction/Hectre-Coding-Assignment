@@ -19,7 +19,7 @@ data class OrchardJob(
     @SerializedName("block")
     val block: String,
     @SerializedName("staff")
-    val staff: Staff,
+    var staff: Staff,
     @SerializedName("field")
-    val row: List<Row>
+    var row: List<Row>
 ) : Serializable
