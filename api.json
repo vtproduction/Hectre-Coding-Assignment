@@ -110,8 +110,100 @@
           "completed" : 99
         }
       },
+      
+  {
+    "id" : 122,
+    "type" : 1,
+    "orchard" : "Victoria (V13KZ)",
+    "block" : "MM0111",
+    "staff" : {
+      "id" : 33022,
+      "firstName" : "Rai",
+      "lastName" : "Ishikawa"
+    },
+    "field" : [
+      {
+        "rowId" : 1,
+        "current" : 0,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 85
+        }
+      },
+      {
+        "rowId" : 2,
+        "current" : 105,
+        "completed" : null
+      },
+      {
+        "rowId" : 5,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 7,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 250
+        }
+      },
+      {
+        "rowId" : 9,
+        "current" : 25,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 11,
+        "current" : 15,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 12,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 18,
+            "firstName" : "Ha",
+            "lastName" : "Manh Nguyen"
+          },
+          "completed" : 99
+        }
+      },
       {
         "rowId" : 13,
+        "current" : 2,
+        "completed" : null
+      },
+      {
+        "rowId" : 14,
+        "current" : 2,
+        "completed" : null
+      },
+      {
+        "rowId" : 15,
         "current" : 2,
         "completed" : null
       }
@@ -170,6 +262,65 @@
       "lastName" : "Kane"
     },
     "field" : [
+      {
+        "rowId" : 3,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 4,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 250
+        }
+      },
+      {
+        "rowId" : 5,
+        "current" : 20,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Keijo",
+            "lastName" : "Adriana"
+          },
+          "completed" : 100
+        }
+      }
+    ]
+  },
+  {
+    "id" : 103,
+    "type" : 2,
+    "orchard" : "Benjamin (V1394U)",
+    "block" : "TESDOC010",
+    "staff" : {
+      "id" : 1,
+      "firstName" : "Xiu",
+      "lastName" : "Mai"
+    },
+    "field" : [
+      {
+        "rowId" : 1,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 2,
+        "current" : 5,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 150
+        }
+      },
       {
         "rowId" : 3,
         "current" : 5,
