@@ -109,8 +109,9 @@
           },
           "completed" : 99
         }
-      },
-      
+      }
+    ]
+  },
   {
     "id" : 122,
     "type" : 1,
@@ -203,7 +204,7 @@
         "completed" : null
       },
       {
-        "rowId" : 15,
+        "rowId" : 1,
         "current" : 2,
         "completed" : null
       }
