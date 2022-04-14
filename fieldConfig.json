@@ -38,5 +38,29 @@
   {
     "rowId" : 10,
     "totalTrees" : 550
+  },
+  {
+    "rowId" : 11,
+    "totalTrees" : 390
+  }
+  ,
+  {
+    "rowId" : 12,
+    "totalTrees" : 870
+  }
+  ,
+  {
+    "rowId" : 13,
+    "totalTrees" : 1550
+  }
+  ,
+  {
+    "rowId" : 14,
+    "totalTrees" : 999
+  }
+  ,
+  {
+    "rowId" : 15,
+    "totalTrees" : 855
   }
 ]
