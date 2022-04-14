@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.Button
 import android.widget.FrameLayout
+import android.widget.ImageButton
 import androidx.appcompat.widget.Toolbar
 import com.midsummer.orchardjob.R
 
@@ -20,7 +21,7 @@ class MyToolbar : Toolbar{
 
     private var navigateUpListener: () -> Unit = {}
 
-    private lateinit var navigateUp: FrameLayout
+    private lateinit var navigateUp: ImageButton
 
     constructor(context: Context) : super(context) {
         init(context)
