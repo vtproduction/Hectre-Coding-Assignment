@@ -113,6 +113,213 @@
     ]
   },
   {
+    "id" : 15,
+    "type" : 1,
+    "orchard" : "Victoria (V13KZ)",
+    "block" : "MM25888",
+    "staff" : {
+      "id" : 1591,
+      "firstName" : "Monkey",
+      "lastName" : "D.Luffy"
+    },
+    "field" : [
+      {
+        "rowId" : 1,
+        "current" : 0,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 85
+        }
+      },
+      {
+        "rowId" : 2,
+        "current" : 105,
+        "completed" : null
+      },
+      {
+        "rowId" : 3,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 4,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 250
+        }
+      },
+      {
+        "rowId" : 5,
+        "current" : 25,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 6,
+        "current" : 15,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 7,
+        "current" : 15,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 8,
+        "current" : 15,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 12,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 18,
+            "firstName" : "Ha",
+            "lastName" : "Manh Nguyen"
+          },
+          "completed" : 99
+        }
+      }
+    ]
+  },
+  {
+    "id" : 16,
+    "type" : 1,
+    "orchard" : "Victoria (V13KZ)",
+    "block" : "MM25888",
+    "staff" : {
+      "id" : 1592,
+      "firstName" : "Tien",
+      "lastName" : "Xin Han"
+    },
+    "field" : [
+      {
+        "rowId" : 1,
+        "current" : 0,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 85
+        }
+      },
+      {
+        "rowId" : 2,
+        "current" : 105,
+        "completed" : null
+      },
+      {
+        "rowId" : 3,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 4,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 250
+        }
+      },
+      {
+        "rowId" : 5,
+        "current" : 25,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 6,
+        "current" : 15,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 7,
+        "current" : 15,
+        "completed" : null
+      },
+      {
+        "rowId" : 9,
+        "current" : 15,
+        "completed" : {
+          "staff" : {
+            "id" : 88,
+            "firstName" : "Pyung",
+            "lastName" : "Beak"
+          },
+          "completed" : 15
+        }
+      },
+      {
+        "rowId" : 11,
+        "current" : 2,
+        "completed" : {
+          "staff" : {
+            "id" : 18,
+            "firstName" : "Ha",
+            "lastName" : "Manh Nguyen"
+          },
+          "completed" : 99
+        }
+      }
+    ]
+  },
+  {
     "id" : 122,
     "type" : 1,
     "orchard" : "Victoria (V13KZ)",
@@ -349,6 +556,90 @@
             "lastName" : "Adriana"
           },
           "completed" : 100
+        }
+      }
+    ]
+  },
+  {
+    "id" : 1035,
+    "type" : 2,
+    "orchard" : "Benjamin (V1394U)",
+    "block" : "TESDOC010",
+    "staff" : {
+      "id" : 10000,
+      "firstName" : "Tony",
+      "lastName" : "Stark"
+    },
+    "field" : [
+      {
+        "rowId" : 2,
+        "current" : 5,
+        "completed" : null
+      },
+      {
+        "rowId" : 3,
+        "current" : 5,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 250
+        }
+      },
+      {
+        "rowId" : 4,
+        "current" : 2,
+        "completed" : null
+      },
+      {
+        "rowId" : 5,
+        "current" : 20,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Keijo",
+            "lastName" : "Adriana"
+          },
+          "completed" : 100
+        }
+      },
+      {
+        "rowId" : 9,
+        "current" : 5,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 150
+        }
+      },
+    ]
+  },
+  {
+    "id" : 123,
+    "type" : 2,
+    "orchard" : "Victoria (V13KZ)",
+    "block" : "MM0111",
+    "staff" : {
+      "id" : 10101,
+      "firstName" : "Natasha",
+      "lastName" : "Romanoff"
+    },
+    "field" : [
+      {
+        "rowId" : 1,
+        "current" : 0,
+        "completed" : {
+          "staff" : {
+            "id" : 2,
+            "firstName" : "Yi",
+            "lastName" : "Wan"
+          },
+          "completed" : 85
         }
       }
     ]
