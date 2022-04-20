@@ -64,7 +64,7 @@ class MainViewModel @Inject constructor(
     private fun loadData() {
         viewModelScope.launch {
 
-            val fieldConfig = repository.fetchFieldConfigs()
+            val fieldConfig = repository.fetchLocalFieldConfigs()
             _fieldConfigs.value = fieldConfig
 
             val data1 = repository.fetchLocalPruningJobs()

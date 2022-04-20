@@ -6,6 +6,8 @@ import com.midsummer.orchardjob.data.remote.FetchOrchardJobUseCase
 import com.midsummer.orchardjob.pojo.FieldConfig
 import com.midsummer.orchardjob.pojo.OrchardJob
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
@@ -42,15 +44,20 @@ class OrchardJobRepository @Inject constructor(){
         }
     }
 
-    suspend fun fetchAllFieldConfig() {
+    suspend fun fetchAllFieldConfig(fetchFromRemote: Boolean = true) : List<FieldConfig> {
         try{
-            when(val result = fieldConfigUseCase.fetchFieldConfigs()){
-                is FetchFieldConfigUseCase.Result.Success -> {
-                    local.insertFieldConfig(result.fieldConfig)
+            return if(fetchFromRemote){
+                when(val result = fieldConfigUseCase.fetchFieldConfigs()){
+                    is FetchFieldConfigUseCase.Result.Success -> {
+                        local.insertFieldConfig(result.fieldConfig)
+                        result.fieldConfig
+                    }
+                    is FetchFieldConfigUseCase.Result.Failure -> {
+                        local.getAllFieldConfig()
+                    }
                 }
-                is FetchFieldConfigUseCase.Result.Failure -> {
-                    throw Exception("Fail to fetch field configs from server.")
-                }
+            }else{
+                local.getAllFieldConfig()
             }
         }catch(t: Throwable){
             throw  t
@@ -65,7 +72,7 @@ class OrchardJobRepository @Inject constructor(){
         }
     }
 
-    suspend fun fetchFieldConfigs() : List<FieldConfig> {
+    suspend fun fetchLocalFieldConfigs() : List<FieldConfig> {
         try {
             return local.getAllFieldConfig()
         } catch (t: Throwable) {
