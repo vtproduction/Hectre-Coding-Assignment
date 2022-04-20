@@ -17,8 +17,6 @@ import com.midsummer.orchardjob.R
 import com.midsummer.orchardjob.pojo.OrchardJob
 import com.midsummer.orchardjob.pojo.Row
 import com.midsummer.orchardjob.screens.common.viewController.BaseViewController
-import java.text.FieldPosition
-import kotlin.math.log
 
 /**
  * Created by nienle on 11,April,2022
@@ -114,10 +112,12 @@ class OrchardRowController (
         editText.setText("${row.current}")
 
         editText.addTextChangedListener {
-            val treeNumber = it.toString().toInt()
-            if (treeNumber > getAvailableTree(row)){
-                editText.setText("${getAvailableTree(row)}")
-                editText.setSelection(editText.text.length)
+            if (it.toString().matches("^\\+?[1-9]\\d*\$".toRegex())){
+                val treeNumber = it.toString().toInt()
+                if (treeNumber > getAvailableTree(row)){
+                    editText.setText("${getAvailableTree(row)}")
+                    editText.setSelection(editText.text.length)
+                }
             }
         }
 
