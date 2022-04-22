@@ -87,7 +87,7 @@ class JobDetailViewController(
 
     fun updateJob(job: OrchardJob){
         this.job = job
-        this.orchardRowController.bindJob(job)
+        //this.orchardRowController.bindJob(job)
     }
 
     fun bindJob(job: OrchardJob, orchardRowController: OrchardRowController){

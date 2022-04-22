@@ -15,6 +15,9 @@ object Constants{
     const val JOB_TYPE_PRUNING = 1
     const val JOB_TYPE_THINNING = 2
 
+    const val CELL_TYPE_HEADER = 1
+    const val CELL_TYPE_FOOTER = 2
+    const val CELL_TYPE_CONTENT = 3
 
     const val TAG = ">>LOG.TAG<<"
 }

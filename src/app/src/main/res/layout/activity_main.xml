@@ -12,13 +12,8 @@
         android:layout_height="@dimen/toolbar_height"
         android:background="@color/main"
         android:id="@+id/toolbar"/>
-    <ScrollView
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:id="@+id/container"/>
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"/>
 </LinearLayout>

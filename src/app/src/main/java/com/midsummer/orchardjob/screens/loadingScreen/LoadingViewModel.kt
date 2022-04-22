@@ -57,8 +57,6 @@ class LoadingViewModel @Inject constructor(
     fun loadData(){
         _isLoading.value = true
         viewModelScope.launch {
-            delay(2000)
-
             val configs = repository.fetchAllFieldConfig()
             val data = repository.fetchData()
             _jobs.value = data

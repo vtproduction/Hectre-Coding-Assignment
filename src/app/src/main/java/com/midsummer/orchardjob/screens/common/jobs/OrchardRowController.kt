@@ -37,7 +37,6 @@ class OrchardRowController (
         fun updateSelectedRows(type: Int, jobId: Int, selectedRows: List<Int>)
     }
 
-
     private lateinit var job: OrchardJob
     private val rows : MutableList<Row> = arrayListOf()
     private val buttons : MutableList<View> = arrayListOf()
@@ -54,17 +53,33 @@ class OrchardRowController (
     }
 
 
-    fun bindJob(job: OrchardJob){
-        this.job = job
-        this.rows.clear()
+    fun bindJob(job: OrchardJob, rows: List<Int>){
+        Log.d(TAG, "bindJobbindJob: ${job.staff.firstName} ${rows.joinToString()}")
+        if (true){ //TODO CHANGE LATER
+            this.job = job
+            this.rows.clear()
+            this.rows.addAll(job.row)
+            bindButtonLayouts()
+            bindEditLayouts()
+            Log.d(TAG, "bindJobbindJob: ${job.id}" +
+                    " - ${job.row.joinToString(separator = " - ", transform = { r -> "${r.rowId}:${r.current}" })}")
+        }else{
+            this.selectedRows.clear()
+            this.selectedRows.addAll(selectedRows)
 
-        this.rows.addAll(job.row)
-        bindButtonLayouts()
-        bindEditLayouts()
-        Log.d(TAG, "bindJob: ${job.id}" +
-                " - ${job.row.joinToString(separator = " - ", transform = { r -> "${r.rowId}:${r.current}" })}")
-
+            buttons.forEachIndexed { index, buttonLayout ->
+                val button = buttonLayout.findViewById<Button>(R.id.btnRow)
+                if (selectedRows.contains(index)){
+                    button.backgroundTintList = ContextCompat.getColorStateList(context, R.color.blue)
+                    button.setTextColor(ContextCompat.getColorStateList(context, R.color.white))
+                }else{
+                    button.backgroundTintList = ContextCompat.getColorStateList(context, R.color.brown)
+                    button.setTextColor(ContextCompat.getColorStateList(context, R.color.black))
+                }
+            }
+        }
     }
+
 
     private fun bindButtonLayout(row: Row, index: Int){
 

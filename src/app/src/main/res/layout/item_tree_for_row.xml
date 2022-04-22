@@ -23,6 +23,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:inputType="number"
+            android:imeOptions="actionDone"
             android:id="@+id/editTextNumberPerRow"/>
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textview.MaterialTextView
